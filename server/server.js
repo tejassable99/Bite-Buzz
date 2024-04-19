@@ -9,7 +9,10 @@ const app=express();
 //middleware
 app.use(express.json())
 const cors=require("cors");
-app.use(cors({origin:"https://bite-buzz-dgf8.vercel.app/"}));
+app.use(cors({
+  origin: 'https://bite-buzz-dgf8.vercel.app',
+  credentials: true, // If you need to pass cookies
+}));
 
 
 app.use((req,res,next)=>{
