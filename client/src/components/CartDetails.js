@@ -96,9 +96,9 @@ const CartDetails = () => {
 
     return (
         <>
-            <div className='row justify-content-center m-0'>
+            <div className='row justify-content-center m-0' >
                 <div className='col-md-8 mt-5 mb-5 cardsdetails'>
-                    <div className="card">
+                    <div className="card" style={{marginTop:"70px"}}>
                         <div className="card-header  p-3"style={{backgroundColor:"purple"}}>
                             <div className='card-header-flex'>
                                 <h5 className='text-white m-0'>Cart Calculation{carts.length >0 ? `(${carts.length})`:""}</h5>
