@@ -50,8 +50,8 @@ const chekout=async(req,res)=>{
         payment_method_types:["card"],
         line_items:lineItems,
         mode:"payment",
-        success_url:"http://localhost:3000/sucess",
-        cancel_url:"http://localhost:3000/cancel",
+        success_url:"https://bite-buzz-dgf8.vercel.app/sucess",
+        cancel_url:"https://bite-buzz-dgf8.vercel.app/cancel",
     });
 
     res.json({id:session.id})
