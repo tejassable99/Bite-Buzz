@@ -19,7 +19,7 @@ app.use((req,res,next)=>{
 
 
 // route
-app.use(FoodRoutes)
+app.use("/",FoodRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
