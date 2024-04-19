@@ -15,7 +15,7 @@ const Home = () => {
     useEffect(() => {
         const fetchFoodData = async () => {
             try {
-                const response = await axios.get('http://localhost:4000'); // Assuming your backend endpoint is '/api/cards'
+                const response = await axios.get(process.env.REACT_APP_API_URL); // Assuming your backend endpoint is '/api/cards'
                 // Add a delay of 3000ms before setting the cart data
                 setTimeout(() => {
                     setCartData(response.data);
