@@ -68,7 +68,7 @@ const CartDetails = () => {
 
     // payment integration
     const makePayment = async()=>{
-        const stripe = await loadStripe("pk_test_51NxxCuSAYvDCPI1EzEVwPz0ng0QcpW2gsYVi0Zrch6enVXvWy9InqLQ9JrGrmdNHNems3R0bTqyxPNNm9G6B9GIx00S1xX9zAR");
+        const stripe = await loadStripe(process.env.REACT_APP_Publish_KEY);
 
         const body = {
             products:carts
