@@ -11,7 +11,7 @@ app.use(express.json())
 const cors=require("cors");
 app.use(cors({
   origin: 'https://bite-buzz-dgf8.vercel.app',
-  credentials: true, // If you need to pass cookies
+  
 }));
 
 
@@ -22,7 +22,7 @@ app.use((req,res,next)=>{
 
 
 // route
-app.use("/",FoodRoutes)
+app.use(FoodRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
